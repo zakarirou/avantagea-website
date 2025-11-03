@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Avantagea</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="assets/logo-avantagea.png" alt="Avantagea Logo" class="logo-img">
+                <span>Avantagea</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Accueil</a></li>
+                <li><a href="index.html#solution" class="nav-link">Solution</a></li>
+                <li><a href="index.html#avantages" class="nav-link">Avantages</a></li>
+                <li><a href="index.html#applications" class="nav-link">Applications</a></li>
+                <li><a href="contact.html" class="nav-link active cta-nav">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Même Hero Section que l'index mais pour Contact -->
+    <section class="hero">
+        <div class="hero-background">
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="title-line">Contactez</span>
+                        <span class="title-highlight">Avantagea</span>
+                        <span class="title-line">Aujourd'hui</span>
+                    </h1>
+                    <p class="hero-description">
+                        Prêt à offrir les avantages des grands groupes à votre PME ? 
+                        Notre équipe vous accompagne dans la mise en place de la solution.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#contact-form" class="btn btn-primary">
+                            <span>Nous écrire</span>
+                            <i class="fas fa-arrow-down"></i>
+                        </a>
+                        <a href="tel:+213XXXXXXXXX" class="btn btn-secondary">
+                            <i class="fas fa-phone"></i>
+                            <span>Nous appeler</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="contact-visual">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact-form" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Parlons de votre projet</h2>
+                <p>Remplissez le formulaire et nous vous recontacterons sous 24h</p>
+            </div>
+            
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h3>Email</h3>
+                                <p>contact@avantagea.dz</p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h3>Téléphone</h3>
+                                <p>+213 XXX XX XX XX</p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h3>Adresse</h3>
+                                <p>Alger, Algérie</p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h3>Horaires</h3>
+                                <p>Lun - Ven: 8h00 - 17h00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <form action="https://formspree.io/f/your-form-id" method="POST" class="form">
+                        <div class="form-group">
+                            <label for="name">Nom complet *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="company">Entreprise</label>
+                            <input type="text" id="company" name="company">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Téléphone</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="employees">Nombre d'employés</label>
+                            <select id="employees" name="employees">
+                                <option value="">Sélectionnez</option>
+                                <option value="1-10">1-10 employés</option>
+                                <option value="11-50">11-50 employés</option>
+                                <option value="51-200">51-200 employés</option>
+                                <option value="201+">Plus de 200 employés</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <i class="fas fa-paper-plane"></i>
+                            Envoyer le message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Même Footer que l'index -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <img src="assets/logo-avantagea.png" alt="Avantagea" class="logo-img">
+                        <span>Avantagea</span>
+                    </div>
+                    <p>Démocratisons les avantages sociaux pour les PME Algériennes</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Liens Rapides</h4>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="index.html#solution">Solution</a></li>
+                        <li><a href="index.html#applications">Applications</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> contact@avantagea.dz</li>
+                        <li><i class="fas fa-phone"></i> +213 XXX XX XX XX</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Alger, Algérie</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Avantagea. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
