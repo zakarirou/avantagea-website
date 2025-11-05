@@ -21,6 +21,16 @@ class AvantageaApp {
                 hamburger.classList.toggle('active');
                 navMenu.classList.toggle('active');
             });
+
+
+                        // Fermer le menu quand on clique sur un lien (mobile)
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.addEventListener('click', () => {
+                    hamburger.classList.remove('active');
+                    navMenu.classList.remove('active');
+                });
+            });
+
         }
 
         // Changement de style au scroll

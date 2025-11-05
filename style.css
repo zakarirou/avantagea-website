@@ -616,13 +616,46 @@ body {
 }
 
 /* ===== RESPONSIVE ===== */
+
+/* ===== NAVIGATION MOBILE FIX ===== */
 @media (max-width: 768px) {
   .hamburger {
     display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    z-index: 2000;
   }
-  
+
   .nav-menu {
-    display: none;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 75%;
+    height: 100vh;
+    background: var(--white);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    transition: right 0.4s ease;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+    z-index: 1500;
+  }
+
+  /* 👉 Quand on clique sur le hamburger */
+  .nav-menu.active {
+    right: 0;
+  }
+
+  /* Animation du hamburger */
+  .hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  .hamburger.active span:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
   }
   
   .hero-content {
