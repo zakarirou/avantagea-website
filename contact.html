@@ -75,7 +75,7 @@
         <div class="container">
             <div class="section-header">
                 <h2>Parlons de votre projet</h2>
-                <p>Remplissez le formulaire et nous vous recontacterons sous 24h</p>
+                <p>Remplissez le formulaire et nous vous recontacterons dans les plus brefs délais</p>
             </div>
             
             <div class="contact-grid">
@@ -106,56 +106,85 @@
                             <i class="fas fa-clock"></i>
                             <div>
                                 <h3>Horaires</h3>
-                                <p>Lun - Ven: 8h00 - 17h00</p>
+                                <p>Dim - Jeu: 9h00 - 19h00</p>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <div class="contact-form">
-                    <form action="https://formspree.io/f/your-form-id" method="POST" class="form">
+                    <div class="contact-form">
+                    <form id="contactForm" class="form">
                         <div class="form-group">
-                            <label for="name">Nom complet *</label>
-                            <input type="text" id="name" name="name" required>
+                        <label for="name">Nom complet *</label>
+                        <input type="text" id="name" name="name" required>
                         </div>
                         
                         <div class="form-group">
-                            <label for="company">Entreprise</label>
-                            <input type="text" id="company" name="company">
+                        <label for="company">Entreprise</label>
+                        <input type="text" id="company" name="company">
                         </div>
                         
                         <div class="form-group">
-                            <label for="email">Email *</label>
-                            <input type="email" id="email" name="email" required>
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
                         </div>
                         
                         <div class="form-group">
-                            <label for="phone">Téléphone</label>
-                            <input type="tel" id="phone" name="phone">
+                        <label for="phone">Téléphone</label>
+                        <input type="tel" id="phone" name="phone">
                         </div>
                         
                         <div class="form-group">
-                            <label for="employees">Nombre d'employés</label>
-                            <select id="employees" name="employees">
-                                <option value="">Sélectionnez</option>
-                                <option value="1-10">1-10 employés</option>
-                                <option value="11-50">11-50 employés</option>
-                                <option value="51-200">51-200 employés</option>
-                                <option value="201+">Plus de 200 employés</option>
-                            </select>
+                        <label for="employees">Nombre d'employés</label>
+                        <select id="employees" name="employees">
+                            <option value="">Sélectionnez</option>
+                            <option value="1-10">1-10 employés</option>
+                            <option value="11-50">11-50 employés</option>
+                            <option value="51-200">51-200 employés</option>
+                            <option value="201+">Plus de 200 employés</option>
+                        </select>
                         </div>
                         
                         <div class="form-group">
-                            <label for="message">Message *</label>
-                            <textarea id="message" name="message" rows="5" required></textarea>
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
                         </div>
                         
                         <button type="submit" class="btn btn-primary btn-full">
-                            <i class="fas fa-paper-plane"></i>
-                            Envoyer le message
+                        <i class="fas fa-paper-plane"></i>
+                        Envoyer le message
                         </button>
+
+                        <p id="formResponse" style="margin-top:10px; display:none;"></p>
                     </form>
-                </div>
+                    </div>
+
+                    <script>
+                    document.getElementById("contactForm").addEventListener("submit", async (e) => {
+                    e.preventDefault();
+                    const form = e.target;
+                    const responseElement = document.getElementById("formResponse");
+
+                    // 🧩 Récupération des données
+                    const formData = Object.fromEntries(new FormData(form));
+
+                    // 🔄 Envoi vers ton API Next.js
+                    const res = await fetch("https://avantagea.vercel.app/api/contact", {
+                        method: "POST",
+                        headers: { "Content-Type": "application/json" },
+                        body: JSON.stringify(formData)
+                    });
+
+                    const data = await res.json();
+
+                    // 💬 Afficher un message à l'utilisateur
+                    responseElement.style.display = "block";
+                    responseElement.style.color = data.success ? "green" : "red";
+                    responseElement.textContent = data.message;
+
+                    if (data.success) form.reset();
+                    });
+                    </script>
+
             </div>
         </div>
     </section>
@@ -184,7 +213,7 @@
                     <h4>Contact</h4>
                     <ul>
                         <li><i class="fas fa-envelope"></i> contact@avantagea.com</li>
-                        <li><i class="fas fa-phone"></i> +213 555 68 92 81</li>
+                        <li><i class="fas fa-phone"></i> 0555-68-92-81</li>
                         <li><i class="fas fa-map-marker-alt"></i> Alger, Algérie</li>
                     </ul>
                 </div>

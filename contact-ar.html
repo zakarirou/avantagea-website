@@ -1,235 +1,265 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>اتصل بنا - أفانتاجيا</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-    <style>
-        /* Overrides pour la version arabe */
-        [dir="rtl"] .hero-content,
-        [dir="rtl"] .contact-grid,
-        [dir="rtl"] .footer-content {
-            direction: rtl;
-        }
-        
-        [dir="rtl"] .hero-text {
-            text-align: right;
-        }
-        
-        [dir="rtl"] .contact-method {
-            flex-direction: row-reverse;
-            text-align: right;
-        }
-        
-        [dir="rtl"] .footer-section ul {
-            text-align: right;
-        }
-        
-        [dir="rtl"] .form-group {
-            text-align: right;
-        }
-        
-        [dir="rtl"] .form-group input,
-        [dir="rtl"] .form-group select,
-        [dir="rtl"] .form-group textarea {
-            text-align: right;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>اتصل بنا - أفانتاجيا</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    /* Ajustements RTL */
+    [dir="rtl"] .hero-content,
+    [dir="rtl"] .contact-grid,
+    [dir="rtl"] .footer-content {
+      direction: rtl;
+    }
+
+    [dir="rtl"] .hero-text {
+      text-align: right;
+    }
+
+    [dir="rtl"] .contact-method {
+      flex-direction: row-reverse;
+      text-align: right;
+    }
+
+    [dir="rtl"] .footer-section ul {
+      text-align: right;
+    }
+
+    [dir="rtl"] .form-group {
+      text-align: right;
+    }
+
+    [dir="rtl"] .form-group input,
+    [dir="rtl"] .form-group select,
+    [dir="rtl"] .form-group textarea {
+      text-align: right;
+    }
+  </style>
 </head>
+
 <body>
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="logo">
-                <img src="assets/logo-avantagea.png" alt="شعار أفانتاجيا" class="logo-img">
-                <span>أفانتاجيا</span>
-            </div>
-            <ul class="nav-menu">
-                <li><a href="index-ar.html" class="nav-link">الرئيسية</a></li>
-                <li><a href="index-ar.html#solution" class="nav-link">الحلول</a></li>
-                <li><a href="index-ar.html#avantages" class="nav-link">المزايا</a></li>
-                <li><a href="index-ar.html#applications" class="nav-link">التطبيقات</a></li>
-                <li><a href="contact-ar.html" class="nav-link active cta-nav">اتصل بنا</a></li>
-            </ul>
-            <div class="language-switcher">
-                <button class="lang-btn" data-lang="fr">FR</button>
-                <button class="lang-btn active" data-lang="ar">العربية</button>
-            </div>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </nav>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">
+        <img src="assets/logo-avantagea.png" alt="شعار أفانتاجيا" class="logo-img">
+        <span>أفانتاجيا</span>
+      </div>
+      <ul class="nav-menu">
+        <li><a href="index-ar.html" class="nav-link">الرئيسية</a></li>
+        <li><a href="index-ar.html#solution" class="nav-link">الحلول</a></li>
+        <li><a href="index-ar.html#avantages" class="nav-link">المزايا</a></li>
+        <li><a href="index-ar.html#applications" class="nav-link">التطبيقات</a></li>
+        <li><a href="contact-ar.html" class="nav-link active cta-nav">اتصل بنا</a></li>
+      </ul>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
 
-    <!-- Hero Section pour Contact -->
-    <section class="hero">
-        <div class="hero-background">
-            <div class="floating-shapes">
-                <div class="shape shape-1"></div>
-                <div class="shape shape-2"></div>
-                <div class="shape shape-3"></div>
-            </div>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-background">
+      <div class="floating-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1 class="hero-title">
+            <span class="title-line">اتصل</span>
+            <span class="title-highlight">بأفانتاجيا</span>
+            <span class="title-line">اليوم</span>
+          </h1>
+          <p class="hero-description">
+            هل ترغب في تقديم مزايا المجموعات الكبيرة لشركتك الصغيرة أو المتوسطة؟ 
+            فريقنا يرافقك خطوة بخطوة لتنفيذ الحل المناسب لك.
+          </p>
+          <div class="hero-buttons">
+            <a href="#contact-form" class="btn btn-primary">
+              <span>اكتب لنا</span>
+              <i class="fas fa-arrow-down"></i>
+            </a>
+            <a href="tel:+213555689281" class="btn btn-secondary">
+              <i class="fas fa-phone"></i>
+              <span>اتصل بنا</span>
+            </a>
+          </div>
         </div>
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <h1 class="hero-title">
-                        <span class="title-line">اتصل</span>
-                        <span class="title-highlight">بأفانتاجيا</span>
-                        <span class="title-line">اليوم</span>
-                    </h1>
-                    <p class="hero-description">
-                        مستعد لتقديم مزايا المجموعات الكبيرة لشركتك الصغيرة أو المتوسطة؟ 
-                        فريقنا يرافقك في تنفيذ الحل.
-                    </p>
-                    <div class="hero-buttons">
-                        <a href="#contact-form" class="btn btn-primary">
-                            <span>اكتب لنا</span>
-                            <i class="fas fa-arrow-down"></i>
-                        </a>
-                        <a href="tel:+213555689281" class="btn btn-secondary">
-                            <i class="fas fa-phone"></i>
-                            <span>اتصل بنا</span>
-                        </a>
-                    </div>
-                </div>
-                <div class="hero-visual">
-                    <div class="contact-visual">
-                        <i class="fas fa-headset"></i>
-                    </div>
-                </div>
-            </div>
+        <div class="hero-visual">
+          <div class="contact-visual">
+            <i class="fas fa-headset"></i>
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- Section Contact -->
-    <section id="contact-form" class="contact-section">
-        <div class="container">
-            <div class="section-header">
-                <h2>لنتحدث عن مشروعك</h2>
-                <p>املأ النموذج وسنتصل بك في غضون 24 ساعة</p>
-            </div>
-            
-            <div class="contact-grid">
-                <div class="contact-info">
-                    <div class="contact-methods">
-                        <div class="contact-method">
-                            <i class="fas fa-envelope"></i>
-                            <div>
-                                <h3>البريد الإلكتروني</h3>
-                                <p>contact@avantagea.com</p>
-                            </div>
-                        </div>
-                        <div class="contact-method">
-                            <i class="fas fa-phone"></i>
-                            <div>
-                                <h3>الهاتف</h3>
-                                <p>81 92 68 55 5 213+</p>
-                            </div>
-                        </div>
-                        <div class="contact-method">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div>
-                                <h3>العنوان</h3>
-                                <p>تعاونية أبناء الشهداء ، الخرايسية  الجزائر</p>
-                            </div>
-                        </div>
-                        <div class="contact-method">
-                            <i class="fas fa-clock"></i>
-                            <div>
-                                <h3>أوقات العمل</h3>
-                                <p>الإثنين - الجمعة: 08:00 - 17:00</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+  <!-- Section Contact -->
+  <section id="contact-form" class="contact-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>لنتحدث عن مشروعك</h2>
+        <p>املأ النموذج وسنقوم بالاتصال بك في أقرب وقت ممكن</p>
+      </div>
 
-                <div class="contact-form">
-                    <form action="https://formspree.io/f/your-form-id" method="POST" class="form">
-                        <div class="form-group">
-                            <label for="name">الاسم الكامل *</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="company">الشركة</label>
-                            <input type="text" id="company" name="company">
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="email">البريد الإلكتروني *</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="phone">الهاتف</label>
-                            <input type="tel" id="phone" name="phone">
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="employees">عدد الموظفين</label>
-                            <select id="employees" name="employees">
-                                <option value="">اختر</option>
-                                <option value="1-10">1-10 موظف</option>
-                                <option value="11-50">11-50 موظف</option>
-                                <option value="51-200">51-200 موظف</option>
-                                <option value="201+">أكثر من 200 موظف</option>
-                            </select>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="message">الرسالة *</label>
-                            <textarea id="message" name="message" rows="5" required></textarea>
-                        </div>
-                        
-                        <button type="submit" class="btn btn-primary btn-full">
-                            <i class="fas fa-paper-plane"></i>
-                            إرسال الرسالة
-                        </button>
-                    </form>
-                </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-methods">
+            <div class="contact-method">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <h3>البريد الإلكتروني</h3>
+                <p>contact@avantagea.com</p>
+              </div>
             </div>
+            <div class="contact-method">
+              <i class="fas fa-phone"></i>
+              <div>
+                <h3>الهاتف</h3>
+                <p>0555-68-92-81</p>
+              </div>
+            </div>
+            <div class="contact-method">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <h3>العنوان</h3>
+                <p>الجزائر العاصمة، الجزائر</p>
+              </div>
+            </div>
+            <div class="contact-method">
+              <i class="fas fa-clock"></i>
+              <div>
+                <h3>أوقات العمل</h3>
+                <p>الأحد - الخميس: 09:00 - 19:00</p>
+              </div>
+            </div>
+          </div>
         </div>
-    </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <div class="logo">
-                        <img src="assets/logo-avantagea.png" alt="أفانتاجيا" class="logo-img">
-                        <span>أفانتاجيا</span>
-                    </div>
-                    <p>لتقديم المزايا الاجتماعية للشركات الصغيرة والمتوسطة الجزائرية</p>
-                </div>
-                <div class="footer-section">
-                    <h4>روابط سريعة</h4>
-                    <ul>
-                        <li><a href="index-ar.html">الرئيسية</a></li>
-                        <li><a href="index-ar.html#solution">الحلول</a></li>
-                        <li><a href="index-ar.html#applications">التطبيقات</a></li>
-                        <li><a href="contact-ar.html">اتصل بنا</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>اتصل بنا</h4>
-                    <ul>
-                        <li><i class="fas fa-envelope"></i> contact@avantagea.com</li>
-                        <li><i class="fas fa-phone"></i> +213 555 68 92 81</li>
-                        <li><i class="fas fa-map-marker-alt"></i> تعاونية أبناء الشهداء، الخرايسية  الجزائر</li>
-                    </ul>
-                </div>
+        <!-- Formulaire -->
+        <div class="contact-form">
+          <form id="contactForm" class="form">
+            <div class="form-group">
+              <label for="name">الاسم الكامل *</label>
+              <input type="text" id="name" name="name" required>
             </div>
-            <div class="footer-bottom">
-                <p>2025 &copy; أفانتاجيا. جميع الحقوق محفوظة.</p>
+
+            <div class="form-group">
+              <label for="company">الشركة</label>
+              <input type="text" id="company" name="company">
             </div>
+
+            <div class="form-group">
+              <label for="email">البريد الإلكتروني *</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+              <label for="phone">رقم الهاتف</label>
+              <input type="tel" id="phone" name="phone">
+            </div>
+
+            <div class="form-group">
+              <label for="employees">عدد الموظفين</label>
+              <select id="employees" name="employees">
+                <option value="">اختر</option>
+                <option value="1-10">1-10 موظف</option>
+                <option value="11-50">11-50 موظف</option>
+                <option value="51-200">51-200 موظف</option>
+                <option value="201+">أكثر من 200 موظف</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">الرسالة *</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-full">
+              <i class="fas fa-paper-plane"></i>
+              إرسال الرسالة
+            </button>
+
+            <p id="formResponse" style="margin-top:10px; display:none;"></p>
+          </form>
         </div>
-    </footer>
 
-    <script src="script.js"></script>
+        <!-- Script -->
+        <script>
+          document.getElementById("contactForm").addEventListener("submit", async (e) => {
+            e.preventDefault();
+            const form = e.target;
+            const responseElement = document.getElementById("formResponse");
+
+            // 🧩 جمع البيانات
+            const formData = Object.fromEntries(new FormData(form));
+
+            // 🔄 إرسال البيانات إلى API
+            const res = await fetch("https://avantagea.vercel.app/api/contact", {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify(formData)
+            });
+
+            const data = await res.json();
+
+            // 💬 إظهار النتيجة للمستخدم
+            responseElement.style.display = "block";
+            responseElement.style.color = data.success ? "green" : "red";
+            responseElement.textContent = data.message;
+
+            if (data.success) form.reset();
+          });
+        </script>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <div class="logo">
+            <img src="assets/logo-avantagea.png" alt="أفانتاجيا" class="logo-img">
+            <span>أفانتاجيا</span>
+          </div>
+          <p>نحو تعميم المزايا الاجتماعية للشركات الصغيرة والمتوسطة في الجزائر</p>
+        </div>
+        <div class="footer-section">
+          <h4>روابط سريعة</h4>
+          <ul>
+            <li><a href="index-ar.html">الرئيسية</a></li>
+            <li><a href="index-ar.html#solution">الحلول</a></li>
+            <li><a href="index-ar.html#applications">التطبيقات</a></li>
+            <li><a href="contact-ar.html">اتصل بنا</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>تواصل معنا</h4>
+          <ul>
+            <li><i class="fas fa-envelope"></i> contact@avantagea.com</li>
+            <li><i class="fas fa-phone"></i> 0555-68-92-81</li>
+            <li><i class="fas fa-map-marker-alt"></i> الجزائر العاصمة، الجزائر</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 أفانتاجيا. جميع الحقوق محفوظة.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
