@@ -490,6 +490,7 @@ body {
   font-size: 0.95rem;
 }
 
+
 /* ===== APPLICATIONS ===== */
 .apps {
   padding: 100px 0;
@@ -499,67 +500,77 @@ body {
 .apps-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 40px;
-  max-width: 800px;
+  gap: 30px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
 .app-card {
   background: var(--white);
-  padding: 50px 40px;
+  padding: 40px 30px;
   border-radius: var(--radius-lg);
   text-align: center;
   box-shadow: var(--shadow-md);
   transition: all 0.3s ease;
+  border: 1px solid rgba(134, 186, 228, 0.2);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .app-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-8px);
   box-shadow: var(--shadow-lg);
 }
 
 .app-icon {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   background: var(--gradient-primary);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 auto 30px;
+  margin: 0 auto 25px;
   color: var(--white);
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 .app-card h3 {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-weight: 600;
   color: var(--main);
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .app-card p {
   color: var(--gray);
-  margin-bottom: 30px;
+  margin-bottom: 25px;
+  flex-grow: 1;
+  line-height: 1.5;
 }
 
 .download-buttons {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 12px;
+  margin-top: auto;
 }
 
 .download-btn {
   display: flex;
   align-items: center;
-  gap: 12px;
-  padding: 15px 25px;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px 20px;
   background: var(--dark);
   color: var(--white);
   text-decoration: none;
   border-radius: var(--radius-md);
   transition: all 0.3s ease;
   font-weight: 500;
+  border: none;
+  cursor: pointer;
 }
 
 .download-btn:hover {
@@ -568,7 +579,38 @@ body {
 }
 
 .download-btn i {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
+}
+
+/* Styles spécifiques pour les cartes web */
+.web-card {
+  border: 2px solid var(--lavender);
+  background: linear-gradient(135deg, #FFFFFF 0%, #F0F7FF 100%);
+}
+
+.web-btn {
+  background: var(--gradient-primary) !important;
+}
+
+.web-btn:hover {
+  background: var(--gradient-button) !important;
+  box-shadow: var(--shadow-md);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .apps-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+  
+  .app-card {
+    padding: 30px 25px;
+  }
+  
+  .download-buttons {
+    flex-direction: column;
+  }
 }
 
 /* ===== FOOTER ===== */
@@ -865,18 +907,4 @@ body {
     background: var(--lavender);
     color: var(--white);
     border-color: var(--lavender);
-}
-/* ===== STYLES POUR LES APPLICATIONS WEB ===== */
-.web-card {
-    border: 2px solid var(--surface);
-}
-
-.web-btn {
-    background: var(--gradient-primary) !important;
-    border: none !important;
-}
-
-.web-btn:hover {
-    transform: translateY(-2px);
-    box-shadow: var(--shadow-lg);
 }
