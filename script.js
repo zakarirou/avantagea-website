@@ -31,8 +31,14 @@ class AvantageaApp {
                 });
             });
 
-        }
+        };
 
+        document.querySelectorAll('.nav-link').forEach(link => {
+                link.addEventListener('click', () => {
+                    document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
+                    link.classList.add('active');
+                });
+            });
         // Changement de style au scroll
         window.addEventListener('scroll', () => {
             const navbar = document.querySelector('.navbar');
@@ -46,7 +52,9 @@ class AvantageaApp {
         });
     }
 
-    // Animations au scroll
+
+
+        // Animations au scroll
     initAnimations() {
         const observerOptions = {
             threshold: 0.1,
