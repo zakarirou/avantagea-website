@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Politique de confidentialité - avantagea</title>
+    <style>
+        /* Styles généraux */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            line-height: 1.6;
+            color: #1e293b;
+            background-color: #fff;
+            padding: 0;
+            margin: 0;
+        }
+        
+        /* Header principal */
+        .privacy-header {
+            background: linear-gradient(135deg, #2563eb, #1d4ed8);
+            color: white;
+            padding: 3rem 1rem;
+            text-align: center;
+        }
+        
+        .header-content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .privacy-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+        
+        .last-updated {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 0.6rem 1.2rem;
+            border-radius: 20px;
+            display: inline-block;
+        }
+        
+        .app-info {
+            margin-top: 1.5rem;
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        
+        /* Conteneur principal */
+        .privacy-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+        
+        /* Sections */
+        .section {
+            margin-bottom: 3rem;
+            padding: 1.5rem;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            border-left: 4px solid #2563eb;
+        }
+        
+        .section h2 {
+            color: #2563eb;
+            font-size: 1.5rem;
+            margin-bottom: 1.2rem;
+            padding-bottom: 0.8rem;
+            border-bottom: 2px solid #e2e8f0;
+        }
+        
+        .section h3 {
+            color: #475569;
+            font-size: 1.25rem;
+            margin: 1.8rem 0 0.8rem;
+        }
+        
+        .section h4 {
+            color: #475569;
+            font-size: 1.1rem;
+            margin: 1.5rem 0 0.5rem;
+            font-weight: 600;
+        }
+        
+        .section p {
+            margin-bottom: 1.2rem;
+            color: #1e293b;
+        }
+        
+        .section ul, .section ol {
+            margin-left: 1.8rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .section li {
+            margin-bottom: 0.6rem;
+            color: #1e293b;
+        }
+        
+        .section li strong {
+            color: #2563eb;
+        }
+        
+        /* Définitions */
+        .definition-list {
+            background-color: #f8fafc;
+            border-radius: 8px;
+            padding: 1.8rem;
+            margin: 1.8rem 0;
+            border-left: 4px solid #3b82f6;
+        }
+        
+        .definition-item {
+            margin-bottom: 1.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        
+        .definition-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        
+        .definition-term {
+            font-weight: 700;
+            color: #2563eb;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+        
+        /* Listes d'informations */
+        .info-list {
+            background-color: #eff6ff;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+        }
+        
+        .info-list li {
+            margin-bottom: 0.8rem;
+            padding-left: 0.5rem;
+        }
+        
+        /* Mise en évidence */
+        .highlight-box {
+            background-color: #f0f9ff;
+            border: 2px solid #bae6fd;
+            border-radius: 8px;
+            padding: 1.8rem;
+            margin: 2rem 0;
+        }
+        
+        .highlight-box h3 {
+            color: #0369a1;
+            margin-top: 0;
+        }
+        
+        /* Tableau pour les types de données */
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            background-color: #f8fafc;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        .data-table th {
+            background-color: #2563eb;
+            color: white;
+            text-align: left;
+            padding: 1rem;
+            font-weight: 600;
+        }
+        
+        .data-table td {
+            padding: 1rem;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        
+        .data-table tr:last-child td {
+            border-bottom: none;
+        }
+        
+        /* Contact section */
+        .contact-section {
+            background: linear-gradient(135deg, #1e40af, #1e3a8a);
+            color: white;
+            padding: 3rem 2rem;
+            border-radius: 12px;
+            margin-top: 4rem;
+            text-align: center;
+        }
+        
+        .contact-section h2 {
+            color: white;
+            border-bottom: none;
+            margin-bottom: 1rem;
+        }
+        
+        .contact-email {
+            display: inline-block;
+            background-color: white;
+            color: #2563eb;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 700;
+            margin-top: 1.5rem;
+            transition: all 0.3s ease;
+            font-size: 1.1rem;
+        }
+        
+        .contact-email:hover {
+            background-color: #f8fafc;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Footer */
+        .privacy-footer {
+            text-align: center;
+            padding: 2rem 1rem;
+            margin-top: 3rem;
+            color: #64748b;
+            font-size: 0.9rem;
+            border-top: 1px solid #e2e8f0;
+        }
+        
+        .generator-note {
+            font-style: italic;
+            color: #64748b;
+            margin-top: 2rem;
+            font-size: 0.9rem;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .privacy-header h1 {
+                font-size: 2rem;
+            }
+            
+            .privacy-container {
+                padding: 1rem;
+            }
+            
+            .section {
+                padding: 1.2rem;
+            }
+            
+            .section h2 {
+                font-size: 1.3rem;
+            }
+            
+            .section h3 {
+                font-size: 1.15rem;
+            }
+            
+            .data-table {
+                display: block;
+                overflow-x: auto;
+            }
+            
+            .contact-section {
+                padding: 2rem 1rem;
+            }
+        }
+        
+        /* Pour impression */
+        @media print {
+            .privacy-header {
+                background: none;
+                color: #1e293b;
+                padding: 2rem 0;
+            }
+            
+            .contact-email {
+                background: none;
+                color: #2563eb;
+                text-decoration: underline;
+                padding: 0;
+            }
+            
+            .section {
+                box-shadow: none;
+                border: 1px solid #e2e8f0;
+            }
+        }
+        
+        /* Navigation interne pour longue page */
+        .quick-nav {
+            background-color: #f8fafc;
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            position: sticky;
+            top: 10px;
+            z-index: 100;
+        }
+        
+        .quick-nav h3 {
+            margin-top: 0;
+            color: #2563eb;
+        }
+        
+        .quick-nav ul {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            list-style: none;
+            margin: 0;
+        }
+        
+        .quick-nav li {
+            margin: 0;
+        }
+        
+        .quick-nav a {
+            display: inline-block;
+            background-color: #e2e8f0;
+            color: #475569;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: all 0.3s;
+        }
+        
+        .quick-nav a:hover {
+            background-color: #2563eb;
+            color: white;
+        }
+        
+        @media (max-width: 768px) {
+            .quick-nav ul {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="privacy-header">
+        <div class="header-content">
+            <h1>Politique de confidentialité</h1>
+            <div class="last-updated">Dernière mise à jour : 8 janvier 2026</div>
+            <div class="app-info">Application : avantagea</div>
+        </div>
+    </header>
+    
+    <div class="privacy-container">
+        <!-- Navigation rapide -->
+        <div class="quick-nav">
+            <h3>Navigation rapide</h3>
+            <ul>
+                <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#definitions">Définitions</a></li>
+                <li><a href="#collecte">Collecte de données</a></li>
+                <li><a href="#utilisation">Utilisation</a></li>
+                <li><a href="#partage">Partage</a></li>
+                <li><a href="#securite">Sécurité</a></li>
+                <li><a href="#enfants">Enfants</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        
+        <!-- Introduction -->
+        <section id="introduction" class="section">
+            <h2>Introduction</h2>
+            <p>Cette Politique de confidentialité décrit Nos politiques et procédures sur la collecte, l'utilisation et la divulgation de Vos informations lorsque Vous utilisez le Service et Vous informe de Vos droits à la confidentialité et de la manière dont la loi Vous protège.</p>
+            <p>Nous utilisons Vos Données personnelles pour fournir et améliorer le Service. En utilisant le Service, Vous acceptez la collecte et l'utilisation d'informations conformément à cette Politique de confidentialité. Cette Politique de confidentialité a été créée avec l'aide du Générateur de Politique de confidentialité.</p>
+        </section>
+        
+        <!-- Interprétation et Définitions -->
+        <section id="definitions" class="section">
+            <h2>Interprétation et Définitions</h2>
+            
+            <h3>Interprétation</h3>
+            <p>Les mots dont la première lettre est en majuscule ont des significations définies dans les conditions suivantes. Les définitions suivantes auront la même signification qu'elles apparaissent au singulier ou au pluriel.</p>
+            
+            <h3>Définitions</h3>
+            <div class="definition-list">
+                <div class="definition-item">
+                    <div class="definition-term">Compte</div>
+                    <p>désigne un compte unique créé pour Vous afin d'accéder à notre Service ou à des parties de notre Service.</p>
+                </div>
+                <div class="definition-item">
+                    <div class="definition-term">Affilié</div>
+                    <p>désigne une entité qui contrôle, est contrôlée par ou est sous contrôle commun avec une partie, où "contrôle" signifie la propriété de 50% ou plus des actions, des intérêts ou d'autres titres donnant droit de vote pour l'élection des administrateurs ou d'une autre autorité de gestion.</p>
+                </div>
+                <div class="definition-item">
+                    <div class="definition-term">Application</div>
+                    <p>fait référence à avantagea, le programme logiciel fourni par la Société.</p>
+                </div>
+                <div class="definition-item">
+                    <div class="definition-term">Société</div>
+                    <p>(désignée soit par "la Société", "Nous", "Notre" ou "Nos" dans le présent Accord) fait référence à avantagea.</p>
+                </div>
+                <div class="definition-item">
+                    <div class="definition-term">Pays</div>
+                    <p>fait référence à : Algérie</p>
+                </div>
+                <div class="definition-item">
+                    <div class="definition-term">Appareil</div>
+                    <p>désigne tout appareil pouvant accéder au Service tel qu'un ordinateur, un téléphone portable ou une tablette numérique.</p>
+                </div>
+                <div class="definition-item">
+                    <div class="definition-term">Données personnelles</div>
+                    <p>sont toute information se rapportant à un individu identifié ou identifiable.</p>
+                </div>
+                <div class="definition-item">
+                    <div class="definition-term">Service</div>
+                    <p>fait référence à l'Application.</p>
+                </div>
+                <div class="definition-item">
+                    <div class="definition-term">Fournisseur de services</div>
+                    <p>désigne toute personne physique ou morale qui traite les données pour le compte de la Société. Il fait référence à des sociétés tierces ou à des personnes employées par la Société pour faciliter le Service, fournir le Service au nom de la Société, exécuter des services liés au Service ou aider la Société à analyser l'utilisation du Service.</p>
+                </div>
+                <div class="definition-item">
+                    <div class="definition-term">Données d'utilisation</div>
+                    <p>désigne les données collectées automatiquement, générées soit par l'utilisation du Service, soit par l'infrastructure du Service elle-même (par exemple, la durée d'une visite de page).</p>
+                </div>
+                <div class="definition-item">
+                    <div class="definition-term">Vous</div>
+                    <p>désigne la personne accédant ou utilisant le Service, ou la société, ou toute autre entité légale au nom de laquelle cette personne accède ou utilise le Service, selon le cas.</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Collecte et utilisation de vos données personnelles -->
+        <section id="collecte" class="section">
+            <h2>Collecte et utilisation de vos données personnelles</h2>
+            
+            <h3>Types de données collectées</h3>
+            
+            <h4>Données personnelles</h4>
+            <p>Lors de l'utilisation de Notre Service, Nous pouvons Vous demander de Nous fournir certaines informations personnelles identifiables qui peuvent être utilisées pour Vous contacter ou Vous identifier. Les informations personnelles identifiables peuvent inclure, mais sans s'y limiter :</p>
+            
+            <div class="info-list">
+                <ul>
+                    <li>Adresse e-mail</li>
+                    <li>Prénom et nom</li>
+                    <li>Numéro de téléphone</li>
+                    <li>Données d'utilisation</li>
+                </ul>
+            </div>
+            
+            <h4>Données d'utilisation</h4>
+            <p>Les Données d'utilisation sont collectées automatiquement lors de l'utilisation du Service.</p>
+            <p>Les Données d'utilisation peuvent inclure des informations telles que l'adresse de protocole Internet de Votre appareil (par exemple, l'adresse IP), le type de navigateur, la version du navigateur, les pages de notre Service que Vous visitez, l'heure et la date de Votre visite, le temps passé sur ces pages, les identifiants uniques d'appareil et d'autres données de diagnostic.</p>
+            <p>Lorsque Vous accédez au Service par ou via un appareil mobile, Nous pouvons collecter automatiquement certaines informations, y compris, mais sans s'y limiter :</p>
+            
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Type de données</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Type d'appareil mobile</td>
+                        <td>Le modèle et le fabricant de votre appareil</td>
+                    </tr>
+                    <tr>
+                        <td>ID unique de l'appareil</td>
+                        <td>Identifiant unique attribué à votre appareil</td>
+                    </tr>
+                    <tr>
+                        <td>Adresse IP mobile</td>
+                        <td>Adresse IP de votre appareil mobile</td>
+                    </tr>
+                    <tr>
+                        <td>Système d'exploitation mobile</td>
+                        <td>Version et type de système d'exploitation</td>
+                    </tr>
+                    <tr>
+                        <td>Type de navigateur Internet mobile</td>
+                        <td>Navigateur utilisé sur votre appareil mobile</td>
+                    </tr>
+                    <tr>
+                        <td>Autres données de diagnostic</td>
+                        <td>Données techniques supplémentaires pour le diagnostic</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <p>Nous pouvons également collecter les informations que votre navigateur envoie chaque fois que vous visitez notre Service ou lorsque vous accédez au Service par ou via un appareil mobile.</p>
+        </section>
+        
+        <!-- Utilisation de vos données personnelles -->
+        <section id="utilisation" class="section">
+            <h2>Utilisation de vos données personnelles</h2>
+            <p>La Société peut utiliser les Données personnelles aux fins suivantes :</p>
+            
+            <ol>
+                <li><strong>Pour fournir et maintenir notre Service,</strong> y compris pour surveiller l'utilisation de notre Service.</li>
+                <li><strong>Pour gérer Votre Compte :</strong> pour gérer Votre inscription en tant qu'utilisateur du Service. Les Données personnelles que Vous fournissez peuvent Vous donner accès à différentes fonctionnalités du Service qui sont à Votre disposition en tant qu'utilisateur enregistré.</li>
+                <li><strong>Pour l'exécution d'un contrat :</strong> le développement, la conformité et l'engagement du contrat d'achat pour les produits, articles ou services que Vous avez achetés ou de tout autre contrat avec Nous par le biais du Service.</li>
+                <li><strong>Pour Vous contacter :</strong> Pour Vous contacter par e-mail, appels téléphoniques, SMS ou d'autres formes équivalentes de communication électronique, telles que les notifications push d'une application mobile concernant les mises à jour ou les communications informatives liées aux fonctionnalités, produits ou services sous contrat, y compris les mises à jour de sécurité, lorsque cela est nécessaire ou raisonnable pour leur mise en œuvre.</li>
+                <li><strong>Pour Vous fournir</strong> des nouvelles, des offres spéciales et des informations générales sur d'autres biens, services et événements que Nous proposons et qui sont similaires à ceux que Vous avez déjà achetés ou sur lesquels Vous vous êtes renseigné, sauf si Vous avez choisi de ne pas recevoir ces informations.</li>
+                <li><strong>Pour gérer Vos demandes :</strong> Pour répondre et gérer Vos demandes qui Nous sont adressées.</li>
+                <li><strong>Pour les transferts d'entreprise :</strong> Nous pouvons utiliser Vos informations pour évaluer ou réaliser une fusion, une cession, une restructuration, une réorganisation, une dissolution ou toute autre vente ou transfert de tout ou partie de Nos actifs, que ce soit dans le cadre d'une activité en cours ou dans le cadre d'une faillite, d'une liquidation ou d'une procédure similaire, dans laquelle les Données personnelles détenues par Nous sur les utilisateurs de notre Service font partie des actifs transférés.</li>
+                <li><strong>À d'autres fins :</strong> Nous pouvons utiliser Vos informations à d'autres fins, telles que l'analyse de données, l'identification des tendances d'utilisation, la détermination de l'efficacité de nos campagnes promotionnelles et pour évaluer et améliorer notre Service, nos produits, nos services, notre marketing et votre expérience.</li>
+            </ol>
+        </section>
+        
+        <!-- Partage de vos informations personnelles -->
+        <section id="partage" class="section">
+            <h2>Partage de vos informations personnelles</h2>
+            
+            <div class="highlight-box">
+                <p>Nous pouvons partager Vos informations personnelles dans les situations suivantes :</p>
+                
+                <h4>Avec des Fournisseurs de services :</h4>
+                <p>Nous pouvons partager Vos informations personnelles avec des Fournisseurs de services pour surveiller et analyser l'utilisation de notre Service, pour Vous contacter.</p>
+                
+                <h4>Pour les transferts d'entreprise :</h4>
+                <p>Nous pouvons partager ou transférer Vos informations personnelles dans le cadre ou lors des négociations de toute fusion, vente d'actifs de la Société, financement ou acquisition de tout ou partie de Notre activité à une autre société.</p>
+                
+                <h4>Avec des Affiliés :</h4>
+                <p>Nous pouvons partager Vos informations avec Nos affiliés, auquel cas Nous exigerons que ces affiliés respectent cette Politique de confidentialité. Les affiliés incluent Notre société mère et toute autre filiale, partenaire de coentreprise ou autre société que Nous contrôlons ou qui est sous contrôle commun avec Nous.</p>
+                
+                <h4>Avec des partenaires commerciaux :</h4>
+                <p>Nous pouvons partager Vos informations avec Nos partenaires commerciaux pour Vous offrir certains produits, services ou promotions.</p>
+                
+                <h4>Avec d'autres utilisateurs :</h4>
+                <p>Lorsque Vous partagez des informations personnelles ou interagissez autrement dans les zones publiques avec d'autres utilisateurs, ces informations peuvent être visualisées par tous les utilisateurs et peuvent être distribuées publiquement à l'extérieur.</p>
+                
+                <h4>Avec Votre consentement :</h4>
+                <p>Nous pouvons divulguer Vos informations personnelles à toute autre fin avec Votre consentement.</p>
+            </div>
+        </section>
+        
+        <!-- Conservation de vos données personnelles -->
+        <section class="section">
+            <h2>Conservation de vos données personnelles</h2>
+            <p>La Société conservera Vos Données personnelles seulement aussi longtemps que nécessaire aux fins énoncées dans cette Politique de confidentialité. Nous conserverons et utiliserons Vos Données personnelles dans la mesure nécessaire pour nous conformer à nos obligations légales (par exemple, si nous sommes tenus de conserver vos données pour nous conformer aux lois applicables), résoudre les litiges, et appliquer nos accords et politiques légaux.</p>
+            <p>La Société conservera également les Données d'utilisation à des fins d'analyse interne. Les Données d'utilisation sont généralement conservées pendant une période plus courte, sauf lorsque ces données sont utilisées pour renforcer la sécurité ou améliorer la fonctionnalité de Notre Service, ou lorsque Nous sommes légalement obligés de conserver ces données pendant des périodes plus longues.</p>
+        </section>
+        
+        <!-- Transfert de vos données personnelles -->
+        <section class="section">
+            <h2>Transfert de vos données personnelles</h2>
+            <p>Vos informations, y compris les Données personnelles, sont traitées dans les bureaux opérationnels de la Société et dans tout autre lieu où se trouvent les parties impliquées dans le traitement. Cela signifie que ces informations peuvent être transférées vers - et conservées sur - des ordinateurs situés en dehors de Votre état, province, pays ou autre juridiction gouvernementale où les lois sur la protection des données peuvent différer de celles de Votre juridiction.</p>
+            <p>Votre consentement à cette Politique de confidentialité suivi de Votre soumission de ces informations représente Votre accord à ce transfert.</p>
+            <p>La Société prendra toutes les mesures raisonnablement nécessaires pour garantir que Vos données sont traitées en toute sécurité et conformément à cette Politique de confidentialité et aucun transfert de Vos Données personnelles n'aura lieu vers une organisation ou un pays à moins qu'il n'y ait des contrôles adéquats en place, y compris la sécurité de Vos données et d'autres informations personnelles.</p>
+        </section>
+        
+        <!-- Suppression de vos données personnelles -->
+        <section class="section">
+            <h2>Suppression de vos données personnelles</h2>
+            <p>Vous avez le droit de supprimer ou de demander que Nous vous aidions à supprimer les Données personnelles que Nous avons collectées à Votre sujet.</p>
+            <p>Notre Service peut Vous donner la possibilité de supprimer certaines informations Vous concernant depuis le Service.</p>
+            <p>Vous pouvez mettre à jour, modifier ou supprimer Vos informations à tout moment en vous connectant à Votre Compte, si vous en avez un, et en visitant la section des paramètres du compte qui vous permet de gérer Vos informations personnelles. Vous pouvez également Nous contacter pour demander l'accès, la correction ou la suppression de toute information personnelle que Vous nous avez fournie.</p>
+            <p>Veuillez noter, cependant, que Nous pouvons avoir besoin de conserver certaines informations lorsque nous avons une obligation légale ou une base légale de le faire.</p>
+        </section>
+        
+        <!-- Divulgation de vos données personnelles -->
+        <section class="section">
+            <h2>Divulgation de vos données personnelles</h2>
+            
+            <h3>Transactions commerciales</h3>
+            <p>Si la Société est impliquée dans une fusion, une acquisition ou une vente d'actifs, Vos Données personnelles peuvent être transférées. Nous fournirons un avis avant que Vos Données personnelles ne soient transférées et ne deviennent soumises à une Politique de confidentialité différente.</p>
+            
+            <h3>Application de la loi</h3>
+            <p>Dans certaines circonstances, la Société peut être tenue de divulguer Vos Données personnelles si la loi l'exige ou en réponse à des demandes valides des autorités publiques (par exemple, un tribunal ou une agence gouvernementale).</p>
+            
+            <h3>Autres obligations légales</h3>
+            <p>La Société peut divulguer Vos Données personnelles de bonne foi en croyant qu'une telle action est nécessaire pour :</p>
+            
+            <ol>
+                <li>Se conformer à une obligation légale</li>
+                <li>Protéger et défendre les droits ou les biens de la Société</li>
+                <li>Prévenir ou enquêter sur d'éventuels actes répréhensibles en lien avec le Service</li>
+                <li>Protéger la sécurité personnelle des Utilisateurs du Service ou du public</li>
+                <li>Se protéger contre la responsabilité légale</li>
+            </ol>
+        </section>
+        
+        <!-- Sécurité de vos données personnelles -->
+        <section id="securite" class="section">
+            <h2>Sécurité de vos données personnelles</h2>
+            <p>La sécurité de Vos Données personnelles est importante pour Nous, mais rappelez-vous qu'aucune méthode de transmission sur Internet ou méthode de stockage électronique n'est sécurisée à 100 %. Bien que Nous nous efforcions d'utiliser des moyens commercialement raisonnables pour protéger Vos Données personnelles, Nous ne pouvons garantir leur sécurité absolue.</p>
+        </section>
+        
+        <!-- Confidentialité des enfants -->
+        <section id="enfants" class="section">
+            <h2>Confidentialité des enfants</h2>
+            <p>Notre Service ne s'adresse à personne de moins de 13 ans. Nous ne collectons pas sciemment d'informations personnellement identifiables auprès de personnes de moins de 13 ans. Si Vous êtes un parent ou un tuteur et que Vous savez que Votre enfant Nous a fourni des Données personnelles, veuillez Nous contacter. Si Nous apprenons que Nous avons collecté des Données personnelles auprès de personnes de moins de 13 ans sans vérification du consentement parental, Nous prenons des mesures pour supprimer ces informations de Nos serveurs.</p>
+            <p>Si Nous devons nous appuyer sur le consentement comme base légale pour traiter Vos informations et que Votre pays exige le consentement d'un parent, Nous pouvons exiger le consentement de Votre parent avant de collecter et d'utiliser ces informations.</p>
+        </section>
+        
+        <!-- Liens vers d'autres sites web -->
+        <section class="section">
+            <h2>Liens vers d'autres sites web</h2>
+            <p>Notre Service peut contenir des liens vers d'autres sites web qui ne sont pas exploités par Nous. Si Vous cliquez sur un lien tiers, Vous serez dirigé vers le site de ce tiers. Nous Vous conseillons vivement de consulter la Politique de confidentialité de chaque site que Vous visitez.</p>
+            <p>Nous n'avons aucun contrôle et n'assumons aucune responsabilité quant au contenu, aux politiques de confidentialité ou aux pratiques des sites ou services tiers.</p>
+        </section>
+        
+        <!-- Modifications de cette politique de confidentialité -->
+        <section class="section">
+            <h2>Modifications de cette politique de confidentialité</h2>
+            <p>Nous pouvons mettre à jour Notre Politique de confidentialité de temps à autre. Nous Vous informerons de tout changement en publiant la nouvelle Politique de confidentialité sur cette page.</p>
+            <p>Nous Vous informerons par e-mail et/ou par un avis bien visible sur Notre Service, avant que le changement ne devienne effectif et mettrons à jour la date "Dernière mise à jour" en haut de cette Politique de confidentialité.</p>
+            <p>Il Vous est conseillé de consulter cette Politique de confidentialité périodiquement pour tout changement. Les modifications de cette Politique de confidentialité sont effectives lorsqu'elles sont publiées sur cette page.</p>
+        </section>
+        
+        <!-- Contact -->
+        <section id="contact" class="contact-section">
+            <h2>Contactez-nous</h2>
+            <p>Si vous avez des questions concernant cette Politique de confidentialité, vous pouvez nous contacter :</p>
+            <p><strong>Par email : contact@avantagea.com</strong></p>
+            <a href="mailto:contact@avantagea.com" class="contact-email">Nous contacter par email</a>
+        </section>
+        
+        <!-- Note de générateur -->
+        <div class="privacy-footer">
+            <div class="generator-note">
+                <p>Cette politique de confidentialité est conforme aux exigences de Google Play Store et a été générée avec l'aide du Privacy Policy Generator.</p>
+                <p>Application : avantagea | Société : avantagea | Pays : Algérie</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
