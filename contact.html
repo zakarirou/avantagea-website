@@ -166,32 +166,6 @@
                     </form>
                     </div>
 
-                    <script>
-                    document.getElementById("contactForm").addEventListener("submit", async (e) => {
-                    e.preventDefault();
-                    const form = e.target;
-                    const responseElement = document.getElementById("formResponse");
-
-                    // 🧩 Récupération des données
-                    const formData = Object.fromEntries(new FormData(form));
-
-                    // 🔄 Envoi vers ton API Next.js
-                    const res = await fetch("https://avantagea.vercel.app/api/contact", {
-                        method: "POST",
-                        headers: { "Content-Type": "application/json" },
-                        body: JSON.stringify(formData)
-                    });
-
-                    const data = await res.json();
-
-                    // 💬 Afficher un message à l'utilisateur
-                    responseElement.style.display = "block";
-                    responseElement.style.color = data.success ? "green" : "red";
-                    responseElement.textContent = data.message;
-
-                    if (data.success) form.reset();
-                    });
-                    </script>
 
             </div>
         </div>
