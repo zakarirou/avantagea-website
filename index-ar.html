@@ -3,374 +3,527 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>أفانتاجيا - المزايا لموظفي للشركات الصغيرة والمتوسطة في الجزائر</title>
+    <title>أفانتاجيا - منصة مزايا الموظفين الجيل الجديد</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="icon" href="assets/favicon.ico?v=2">
     <link rel="stylesheet" href="style.css">
     <style>
-        [dir="rtl"] .hero-content,
-        [dir="rtl"] .benefits-grid,
-        [dir="rtl"] .contact-grid,
-        [dir="rtl"] .apps-grid,
-        [dir="rtl"] .footer-content {
+        /* إضافة للدعم RTL */
+        [dir="rtl"] .container {
             direction: rtl;
         }
-        [dir="rtl"] .hero-text { text-align: right; }
-        [dir="rtl"] .benefit-item { flex-direction: row-reverse; text-align: right; }
-        [dir="rtl"] .footer-section ul { text-align: right; }
+        [dir="rtl"] .nav-menu {
+            margin-right: auto;
+        }
+        [dir="rtl"] .language-switcher {
+            margin-left: 0;
+            margin-right: 30px;
+        }
+        [dir="rtl"] .hero-buttons {
+            justify-content: flex-start;
+        }
+        [dir="rtl"] .footer-content {
+            text-align: right;
+        }
     </style>
 </head>
-<body>
-
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="logo">
-                <img src="assets/logo-avantagea.png" alt="شعار أفانتاجيا" class="logo-img">
-                <span>أفانتاجيا</span>
-            </div>
-            <ul class="nav-menu">
-                <li><a href="#accueil" class="nav-link">الرئيسية</a></li>
-                <li><a href="#solution" class="nav-link">الحلول</a></li>
-                <li><a href="#avantages" class="nav-link">المزايا</a></li>
-                <li><a href="#applications" class="nav-link">التطبيقات</a></li>
-                <li><a href="contact-ar.html" class="nav-link cta-nav">اتصل بنا</a></li>
-            </ul>
-
-            <div class="language-switcher">
-                <button class="lang-btn" data-lang="fr">FR</button>
-                <button class="lang-btn active" data-lang="ar">العربية</button>
-            </div>
-
-            <div class="hamburger">
-                <span></span><span></span><span></span>
-            </div>
+<body dir="rtl">
+<nav class="navbar">
+    <div class="nav-container">
+        <div class="logo">
+            <img src="assets/logo-avantagea.png" alt="شعار أفانتاجيا" class="logo-img">
+            <span>أفانتاجيا</span>
         </div>
-    </nav>
+        <ul class="nav-menu">
+            <li><a href="#accueil" class="nav-link">الرئيسية</a></li>
+            <li><a href="#solution" class="nav-link">الحل</a></li>
+            <li><a href="#offres" class="nav-link">عروضنا</a></li>
+            <li><a href="#avantages" class="nav-link">المزايا</a></li>
+            <li><a href="contact-ar.html" class="nav-link cta-nav">الحصول على عرض سعر</a></li>
+        </ul>
 
-    <!-- Hero -->
-    <section id="accueil" class="hero">
-        <div class="hero-background">
-            <div class="floating-shapes">
-                <div class="shape shape-1"></div>
-                <div class="shape shape-2"></div>
-                <div class="shape shape-3"></div>
-            </div>
+        <div class="language-switcher">
+            <button class="lang-btn" data-lang="fr">FR</button>
+            <button class="lang-btn active" data-lang="ar">العربية</button>
         </div>
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-text">
+
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</nav>
+
+<section id="accueil" class="hero">
+    <div class="hero-background">
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="hero-content">
+            <div class="hero-text">
                 <h1 class="hero-title">
-                    <span class="title-line">حوّل استثمارك في الموارد البشرية</span>
-                    <span class="title-highlight">إلى محرك تحوّلي</span>
-                    <span class="title-line">للتّماسك المؤسساتي والتّفوّق</span>
+                    <span class="title-line">حول ميزانيتك للمزايا</span>
+                    <span class="title-highlight">إلى رافعة استراتيجية</span>
+                    <span class="title-line">للمحافظة والنمو</span>
                 </h1>
-                                    <p class="hero-description">
-                        أفانتاجيا هي أول منصة جزائرية مخصصة لتمكين الشركات الصغيرة والمتوسطة من توفير مزايا لموظفيها بسهولة وبتكلفة مدروسة.  
-                        نحن نحول التحديات التي تواجه أصحاب العمل — مثل فقدان الكفاءات والضغط الإداري — إلى فرص حقيقية للاستقرار والنمو.
-                    </p>
-                    <div class="hero-buttons">
-                        <a href="#solution" class="btn btn-primary">
-                            <span>اكتشف الحل</span>
-                            <i class="fas fa-arrow-down"></i>
-                        </a>
-                        <a href="#applications" class="btn btn-secondary">
-                            <i class="fas fa-mobile-alt"></i>
-                            <span>حمّل التطبيق</span>
-                        </a>
-                    </div>
+                <p class="hero-description">
+                    <strong>الموظفون لا يغادرون فقط بسبب الراتب.</strong> بل يغادرون من أجل التجربة والمزايا التي تقدمها شركات أخرى. أفانتاجيا تمنح جميع الشركات وسائل المحافظة على مواهبها بمزايا متميزة، دون تعقيد أو تكاليف مرتفعة.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#offres" class="btn btn-primary">
+                        <span>اكتشف عروضنا</span>
+                        <i class="fas fa-arrow-left"></i>
+                    </a>
+                    <a href="contact-ar.html" class="btn btn-secondary">
+                        <i class="fas fa-calendar-check"></i>
+                        <span>تشخيص مجاني 30 دقيقة</span>
+                    </a>
                 </div>
-                <div class="hero-visual">
-                    <div class="phone-mockup">
-                        <div class="phone-screen">
-                            <img src="assets/app-screenshot.png" alt="تطبيق أفانتاجيا">
-                        </div>
+            </div>
+            <div class="hero-visual">
+                <div class="phone-mockup">
+                    <div class="phone-screen">
+                        <img src="assets/app-screenshot.png" alt="تطبيق أفانتاجيا">
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Statistics -->
-    <section class="stats">
-        <div class="container">
+<section id="solution" class="solution">
+    <div class="container">
         <div class="section-header">
-                <h2>في سنتنا الأولى نطمح إلى</h2>
-            <div class="stats-grid">
-                <div class="stat-card">
-                    <i class="fas fa-building stat-icon"></i>
-                    <div class="stat-number" data-count="50">0</div>
-                    <div class="stat-label">شركة صغيرة ومتوسطة</div>
+            <h2>ما تملكه الشركات الكبيرة ويمكنك الحصول عليه أيضًا</h2>
+            <p>أفانتاجيا تمنحك 3 أوراق رابحة تحدث الفرق</p>
+        </div>
+        <div class="solution-grid">
+            <div class="solution-card">
+                <div class="card-icon">
+                    <i class="fas fa-handshake"></i>
                 </div>
-                <div class="stat-card">
-                    <i class="fas fa-users stat-icon"></i>
-                    <div class="stat-number" data-count="1000">0</div>
-                    <div class="stat-label">موظف مستفيد</div>
+                <h3>شبكة شركاء متميزة</h3>
+                <p>احصل على نفس الأسعار المتفاوض عليها مثل المجموعات الكبيرة مع شركائنا المتميزين (عيادات، سفر، تسوق، رياضة...).</p>
+            </div>
+            <div class="solution-card">
+                <div class="card-icon">
+                    <i class="fas fa-mobile-alt"></i>
                 </div>
-                <div class="stat-card">
-                    <i class="fas fa-handshake stat-icon"></i>
-                    <div class="stat-number" data-count="70">0</div>
-                    <div class="stat-label">شريك تجاري</div>
+                <h3>منصة رقمية 24/7</h3>
+                <p>كل موظف يستخدم مزاياه حسب وتيرته، متى وأين يريد، عبر تطبيقنا المحلي والويب.</p>
+            </div>
+            <div class="solution-card">
+                <div class="card-icon">
+                    <i class="fas fa-heart"></i>
                 </div>
-                <div class="stat-card">
-                    <i class="fas fa-gift stat-icon"></i>
-                    <div class="stat-number" data-count="400">0</div>
-                    <div class="stat-label">عرض حصري+</div>
+                <h3>ثقافة شركة حية</h3>
+                <p>عزز الانتماء مع فعاليات، بطولات رياضية وتدريبات ينظمها مستشارونا للموارد البشرية.</p>
+            </div>
+        </div>
+        <div class="solution-cta">
+            <p><strong>النتيجة:</strong> موظفوك يعيشون نفس التجربة كما في الشركات متعددة الجنسيات، مع حل مخصص لشركتك.</p>
+            <a href="contact-ar.html" class="btn btn-primary">احصل على تشخيص مجاني</a>
+        </div>
+    </div>
+</section>
+
+<section class="stats">
+    <div class="container">
+            <div class="section-header">
+                <h2>خلال سنتنا الأولى، نطمح إلى</h2>
+            </div>
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-icon">
+                    <i class="fas fa-building"></i>
+                </div>
+                <div class="stat-number" data-count="50">0</div>
+                <div class="stat-label">شركة عميلة</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <div class="stat-number" data-count="1000">0</div>
+                <div class="stat-label">موظف مستفيد</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">
+                    <i class="fas fa-handshake"></i>
+                </div>
+                <div class="stat-number" data-count="70">0</div>
+                <div class="stat-label">شريك استراتيجي</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">
+                     <i class="fas fa-gift"></i>
+                </div>
+                <div class="stat-number" data-count="400">0</div>
+                <div class="stat-label">+ عرض حصري</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="offres" class="offers">
+    <div class="container">
+        <div class="section-header">
+            <h2>صيغنا</h2>
+            <p>اختر الصيغة المناسبة لحجم شركتك</p>
+        </div>
+        <div class="offers-grid">
+            <!-- STARTER -->
+            <div class="offer-card">
+                <div class="offer-header">
+                    <h3>ستارتر</h3>
+                    <div class="offer-price">
+                        <span class="price">ابتداءً من</span>
+                        <span class="price-main">199 ألف دج</span>
+                        <span class="period">/سنويا</span>
+                    </div>
+                    <p class="offer-subtitle">لـ 10-30 موظف</p>
+                </div>
+                <div class="offer-features">
+                    <h4>مثالي للبداية</h4>
+                    <ul>
+                        <li><i class="fas fa-check"></i> كتالوج كامل للشركاء</li>
+                        <li><i class="fas fa-check"></i> دورتين تدريبيتين مهنيتين عبر الإنترنت</li>
+                        <li><i class="fas fa-check"></i> دخول بطولات رياضية بين الشركات</li>
+                        <li><i class="fas fa-check"></i> فعالية بناء فريق واحدة/سنة منظمة</li>
+                        <li><i class="fas fa-check"></i> تطبيق محلي + لوحة تحكم ويب</li>
+                        <li><i class="fas fa-check"></i> أكواد QR وقسائم رقمية غير محدودة</li>
+                        <li><i class="fas fa-check"></i> واجهة إدارة مع تحليلات</li>
+                        <li><i class="fas fa-check"></i> دمج فرقك مضمون</li>
+                    </ul>
+                </div>
+                <div class="offer-footer">
+                    <a href="contact-ar.html?plan=starter" class="btn btn-outline">اختر هذا العرض</a>
+                </div>
+            </div>
+
+            <!-- GROWTH -->
+            <div class="offer-card">
+                <div class="offer-header">
+                    <h3>نمو</h3>
+                    <div class="offer-price">
+                        <span class="price">ابتداءً من</span>
+                        <span class="price-main">249 ألف دج</span>
+                        <span class="plus">+4999 دج لكل موظف</span>
+                    </div>
+                    <p class="offer-subtitle">لـ 31-150 موظف</p>
+                </div>
+                <div class="offer-features">
+                    <h4>للشركات في طور النمو</h4>
+                    <ul>
+                        <li><i class="fas fa-check"></i> <strong>كل مزايا STARTER، إضافة إلى:</strong></li>
+                        <li><i class="fas fa-check"></i> مستشار أفانتاجيا مشترك</li>
+                        <li><i class="fas fa-check"></i> 4 دورات تدريبية في المجموع</li>
+                        <li><i class="fas fa-check"></i> بطولات رياضية مجانية</li>
+                        <li><i class="fas fa-check"></i> دخول فعاليات أفانتاجيا الحصرية</li>
+                        <li><i class="fas fa-check"></i> مرافقة استراتيجية ربع سنوية للموارد البشرية</li>
+                        <li><i class="fas fa-check"></i> تقرير شهري متقدم مع مؤشرات الأداء</li>
+                        <li><i class="fas fa-check"></i> دعم بريد إلكتروني مميز خلال 24 ساعة</li>
+                    </ul>
+                </div>
+                <div class="offer-footer">
+                    <a href="contact-ar.html?plan=growth" class="btn btn-outline">اختر هذا العرض</a>
+                </div>
+            </div>
+
+            <!-- ENTERPRISE -->
+            <div class="offer-card">
+                <div class="offer-header">
+                    <h3>مقاولة</h3>
+                    <div class="offer-price">
+                        <span class="price">ابتداءً من</span>
+                        <span class="price-main">399 ألف دج</span>
+                        <span class="plus">+3999 دج لكل موظف</span>
+                    </div>
+                    <p class="offer-subtitle">لـ +150 موظف</p>
+                </div>
+                <div class="offer-features">
+                    <h4>لهياكل كبيرة متطلبة</h4>
+                    <ul>
+                        <li><i class="fas fa-check"></i> <strong>كل مزايا GROWTH، إضافة إلى:</strong></li>
+                        <li><i class="fas fa-check"></i> مستشار موارد بشرية مخصص</li>
+                        <li><i class="fas fa-check"></i> دورات تدريبية مخصصة بالكامل</li>
+                        <li><i class="fas fa-check"></i> فعاليات شركة جاهزة</li>
+                        <li><i class="fas fa-check"></i> تنظيم بطولة رياضية داخلية</li>
+                        <li><i class="fas fa-check"></i> تقرير موارد بشرية متقدم</li>
+                        <li><i class="fas fa-check"></i> خط ساخن دعم مخصص</li>
+                        <li><i class="fas fa-check"></i> تفاوض عروض شركاء حصرية</li>
+                        <li><i class="fas fa-check"></i> برنامج مشاركة علامة صاحب العمل</li>
+                        <li><i class="fas fa-check"></i> تكامل نظم معلومات الموارد البشرية مخصص</li>
+                    </ul>
+                </div>
+                <div class="offer-footer">
+                    <a href="contact-ar.html?plan=enterprise" class="btn btn-outline">اتصل بنا</a>
                 </div>
             </div>
         </div>
-    </section>
-
-    <!-- Solution -->
-        <section id="solution" class="solution">
-            <div class="container">
-                <div class="section-header">
-                    <h2>مهمتنا</h2>
-                    <p>توفير الاستقرار، والأمان، والتقدير في قلب المؤسسات الصغيرة والمتوسطة الجزائرية.</p>
-                </div>
-                <div class="solution-grid">
-                    <div class="solution-card">
-                        <div class="card-icon">
-                            <i class="fas fa-bridge"></i>
-                        </div>
-                        <h3>التوفيق بين المؤسسات وموظفيها</h3>
-                        <p>نساعد أصحاب المؤسسات على منح فرقهم نفس المزايا التي تقدمها الشركات الكبرى، مع الحفاظ على مرونة المؤسسات الصغيرة. النتيجة: التزام أكبر واستقرار وظيفي أفضل.</p>
-                    </div>
-                    <div class="solution-card">
-                        <div class="card-icon">
-                            <i class="fas fa-network-wired"></i>
-                        </div>
-                        <h3>نظام من الشركاء المتميزين</h3>
-                        <p>تخفيضات، عيادات خاصة، دور حضانة، وعلامات تجارية وطنية... نبني شبكة من المزايا الحصرية، مُتفاوض عليها خصيصاً لصالح المؤسسات الصغيرة وموظفيها.</p>
-                    </div>
-                    <div class="solution-card">
-                        <div class="card-icon">
-                            <i class="fas fa-robot"></i>
-                        </div>
-                        <h3>إدارة رقمية بالكامل</h3>
-                        <p>أفانتاجيا ترقمن إدارة المزايا للموظفين بالكامل، لتمنح أصحاب المؤسسات الوقت للتركيز على النمو وخدمة عملائهم.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
+        <div class="offers-note">
+            <p><i class="fas fa-info-circle"></i> <strong>كل صيغنا تشمل:</strong> الوصول للشركاء المتميزين، المنصة الرقمية، والمرافقة المستمرة.</p>
+        </div>
+    </div>
+</section>
 
 <section id="avantages" class="benefits">
     <div class="container">
         <div class="benefits-grid">
-
-            <!-- للموظفين -->
+            <!-- Pour l'Entreprise -->
             <div class="benefit-section">
                 <div class="section-header">
-                    <h2>للموظفين</h2>
-                    <p>مزايا حقيقية تُحسّن حياتك اليومية وتعزز راحتك واستقرارك المهني</p>
+                    <h2>لشركتك</h2>
+                    <p>استثمار استراتيجي يجني ثماره</p>
                 </div>
                 <div class="benefits-list">
                     <div class="benefit-item">
-                        <i class="fas fa-shield-heart"></i>
+                        <i class="fas fa-users"></i>
                         <div>
-                            <h4>الأمان والطمأنينة</h4>
-                            <p>استفد من مزايا حصرية تمنحك استقراراً وثقة أكبر في مكان عملك.</p>
+                            <h4>المحافظة على المواهب</h4>
+                            <p>قلل من الدوران الوظيفي واحتفظ بأفضل متعاونيك بفضل مزايا جذابة.</p>
                         </div>
                     </div>
                     <div class="benefit-item">
-                        <i class="fas fa-hospital"></i>
+                        <i class="fas fa-chart-line"></i>
                         <div>
-                            <h4>الصحة والعافية</h4>
-                            <p>رعاية طبية مميزة وشراكات مع أفضل العيادات والمراكز الطبية بأسعار تفضيلية.</p>
+                            <h4>عائد استثمار قابل للقياس</h4>
+                            <p>حل اقتصادي مع عائد استثمار واضح وقابل للقياس.</p>
                         </div>
                     </div>
                     <div class="benefit-item">
-                        <i class="fas fa-gift"></i>
+                        <i class="fas fa-crown"></i>
                         <div>
-                            <h4>مكافآت ومناسبات</h4>
-                            <p>دعم مالي وعروض خاصة للمناسبات الدينية والعائلية مثل عيد الأضحى والدخول المدرسي.</p>
+                            <h4>تعزيز علامة صاحب العمل</h4>
+                            <p>كن صاحب العمل المرجعي في قطاعك من خلال تقدير فرقك.</p>
                         </div>
                     </div>
                     <div class="benefit-item">
-                        <i class="fas fa-credit-card"></i>
+                        <i class="fas fa-laptop"></i>
                         <div>
-                            <h4>تسهيلات في الدفع</h4>
-                            <p>اقتناء منتجات أساسية بأسعار تفضيلية وبخطط دفع مرنة ومريحة.</p>
+                            <h4>إدارة مبسطة</h4>
+                            <p>منصة 100% رقمية تعمل على أتمتة إدارة المزايا.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pour les Employés -->
+            <div class="benefit-section">
+                <div class="section-header">
+                    <h2>لموظفيك</h2>
+                    <p>مزايا ملموسة تحسن الحياة اليومية</p>
+                </div>
+                <div class="benefits-list">
+                    <div class="benefit-item">
+                        <i class="fas fa-heartbeat"></i>
+                        <div>
+                            <h4>الصحة والرفاهية</h4>
+                            <p>عيادات خاصة، رعاية طبية أولوية، وتخفيضات طبية.</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="fas fa-shopping-cart"></i>
+                        <div>
+                            <h4>القوة الشرائية</h4>
+                            <p>تخفيضات حصرية عند شركائنا المتميزين.</p>
                         </div>
                     </div>
                     <div class="benefit-item">
                         <i class="fas fa-plane"></i>
                         <div>
                             <h4>السفر والترفيه</h4>
-                            <p>استمتع بعروض حصرية لقضاء العطل والرحلات بأسعار مدروسة.</p>
+                            <p>عروض خاصة للسفر، السينما، الرياضة والفعاليات.</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="fas fa-graduation-cap"></i>
+                        <div>
+                            <h4>التطور المهني</h4>
+                            <p>دورات معتمدة ومرافقة مهنية.</p>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <!-- لأصحاب المؤسسات -->
-            <div class="benefit-section">
-                <div class="section-header">
-                    <h2>لأصحاب المؤسسات</h2>
-                    <p>حل متكامل لتعزيز ولاء الموظفين للشركة واستقرار فرق العمل</p>
-                </div>
-                <div class="benefits-list">
-                    <div class="benefit-item">
-                        <i class="fas fa-users"></i>
-                        <div>
-                            <h4>الاحتفاظ بالكفاءات</h4>
-                            <p>قلل من دوران الموظفين واحتفظ بأفضل العناصر عبر مزايا تحفّز الولاء والانتماء للمؤسسة.</p>
-                        </div>
-                    </div>
-                    <div class="benefit-item">
-                        <i class="fas fa-chart-line"></i>
-                        <div>
-                            <h4>استثمار فعّال ومربح</h4>
-                            <p>حلول اقتصادية تُعزّز الإنتاجية وتحقق عائداً ملموساً على المدى القصير والطويل.</p>
-                        </div>
-                    </div>
-                    <div class="benefit-item">
-                        <i class="fas fa-laptop"></i>
-                        <div>
-                            <h4>إدارة مبسّطة رقمياً</h4>
-                            <p>منصة رقمية بالكامل تُخفّف الأعباء الإدارية وتوفر وقتك لتطوير أعمالك.</p>
-                        </div>
-                    </div>
-                    <div class="benefit-item">
-                        <i class="fas fa-balance-scale"></i>
-                        <div>
-                            <h4>عدالة وصورة مؤسسية إيجابية</h4>
-                            <p>قدّم لموظفيك نفس مزايا المؤسسات الكبرى، وعزّز سمعة شركتك كبيئة عمل عادلة وجاذبة.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
         </div>
     </div>
 </section>
 
+<section id="applications" class="apps">
+    <div class="container">
+        <div class="section-header">
+            <h2>منظومتنا الرقمية</h2>
+            <p>منصة كاملة لتبسيط إدارة المزايا</p>
+        </div>
+        <div class="apps-grid">
+            <!-- Application Employés -->
+            <div class="app-card">
+                <div class="app-icon">
+                    <i class="fas fa-user-tie"></i>
+                </div>
+                <h3>تطبيق الموظفين</h3>
+                <p>موظفوك يكتشفون ويستخدمون كل مزاياهم في الوقت الحقيقي. إدارة القسائم، متابعة التوفيرات والاستفادة من العروض الحصرية 24/7.</p>
+                <div class="download-buttons">
+                    <a href="https://play.google.com/store/apps/details?id=com.zakariroukou.Avantagea" class="download-btn" target="_blank">
+                        <i class="fab fa-google-play"></i>
+                        <span>Google Play</span>
+                    </a>
+                    <a href="https://apps.apple.com/dz/app/avantagea/id6757639440" class="download-btn" target="_blank">
+                        <i class="fab fa-app-store-ios"></i>
+                        <span>App Store</span>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Plateforme Web Clients -->
+            <div class="app-card">
+                <div class="app-icon">
+                    <i class="fas fa-building"></i>
+                </div>
+                <h3>فضاء العميل</h3>
+                <p>للمدراء - إدارة موظفيك، استشارة تحليلات المشاركة، ومتابعة استخدام المزايا في الوقت الحقيقي.</p>
+                <div class="download-buttons">
+                    <a href="https://client.avantagea.com" class="download-btn web-btn" target="_blank">
+                        <i class="fas fa-external-link-alt"></i>
+                        <span>الوصول إلى client.avantagea.com</span>
+                    </a>
+                </div>
+            </div>
 
-    <!-- Apps -->
-    <section id="applications" class="apps">
-        <div class="container">
+            <!-- Plateforme Web Partenaires -->
+            <div class="app-card">
+                <div class="app-icon">
+                    <i class="fas fa-handshake"></i>
+                </div>
+                <h3>فضاء الشريك</h3>
+                <p>لشركائنا التجاريين - إدارة عروضكم، متابعة الإحصائيات والتفاعل مع شبكة شركاتنا.</p>
+                <div class="download-buttons">
+                    <a href="https://partner.avantagea.com" class="download-btn web-btn" target="_blank">
+                        <i class="fas fa-external-link-alt"></i>
+                        <span>الوصول إلى partner.avantagea.com</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Application Partenaires -->
+            <div class="app-card">
+                <div class="app-icon">
+                    <i class="fas fa-qrcode"></i>
+                </div>
+                <h3>تطبيق التحقق</h3>
+                <p>للتجار الشركاء - تحقق بسرعة من قسائم الموظفين عبر مسح QR code. متاح على Android.</p>
+                <div class="download-buttons">
+                    <a href="https://github.com/zakarirou/avantagea-validation-coupon-apk/releases/latest/download/Avantagea-coupons-validation.apk" class="download-btn" target="_blank">
+                        <i class="fab fa-android"></i>
+                        <span>تحميل APK</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="process-section">
             <div class="section-header">
-                <h2>حمّل تطبيق أفانتاجيا</h2>
-                <p>مزاياك دائماً بين يديك. لأن الراحة في بيئة العمل يجب أن تكون واقعا ملموسا.</p>
+                <h3>كيف تبدأ؟</h3>
+                <p>عملية بسيطة وسريعة</p>
             </div>
-            <div class="apps-grid">
-
-
-                                <!-- تطبيق الموظفين -->
-                <div class="app-card">
-                    <div class="app-icon">
-                        <i class="fas fa-user-tie"></i>
-                    </div>
-                    <h3>تطبيق الموظفين</h3>
-                    <p>اكتشف واستخدم جميع مزاياك في الوقت الفعلي. أدير قسائمك، تابع مدخراتك واستمتع بالعروض الحصرية.</p>
-                    <div class="download-buttons">
-                        <a href="https://play.google.com/store/apps/details?id=com.zakariroukou.Avantagea" class="download-btn" target="_blank">
-                            <i class="fab fa-google-play"></i>
-                            <span>جوجل بلاي</span>
-                        </a>
-                        <a href="https://apps.apple.com/dz/app/avantagea/id6757639440" class="download-btn" target="_blank" >
-                            <i class="fab fa-app-store-ios"></i>
-                            <span>آب ستور</span>
-                        </a>
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h4>اتصال أولي</h4>
+                        <p>تبادل حول احتياجاتك وأهدافك للموارد البشرية</p>
                     </div>
                 </div>
-                
-                <!-- تطبيق الشركاء (التحقق) -->
-<div class="app-card">
-    <div class="app-icon">
-        <i class="fas fa-qrcode"></i>
-    </div>
-    <h3>تطبيق التحقق (للشركاء)</h3>
-    <p>
-        تطبيق مخصص لشركاء Avantagea للتحقق بسرعة من قسائم الموظفين.
-        مسح رموز QR والتحقق الفوري مباشرة من هاتف Android.
-        <br><br>
-        <strong>متوفر فقط على Android (APK).</strong>
-    </p>
-    <div class="download-buttons">
-        <a href="https://github.com/zakarirou/avantagea-validation-coupon-apk/releases/latest/download/Avantagea-coupons-validation.apk"
-           class="download-btn"
-           target="_blank">
-            <i class="fab fa-android"></i>
-            <span>تحميل APK لنظام Android</span>
-        </a>
-    </div>
-</div>
-
-
-
-                <!-- المنصة الإلكترونية للعملاء -->
-                <div class="app-card web-card">
-                    <div class="app-icon">
-                        <i class="fas fa-building"></i>
-                    </div>
-                    <h3>مساحة الزبائن</h3>
-                    <p>لأصحاب المؤسسات - أدير موظفيك، استعرض العروض المتاحة وعبّر عن اهتمامك بمقترحات جديدة.</p>
-                    <div class="download-buttons">
-                        <a href="https://client.avantagea.com" class="download-btn web-btn" target="_blank">
-                            <i class="fas fa-external-link-alt"></i>
-                            <span>الدخول إلى client.avantagea.com</span>
-                        </a>
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h4>عرض توضيحي</h4>
+                        <p>عرض مخصص للمنصة</p>
                     </div>
                 </div>
-
-                <!-- المنصة الإلكترونية للشركاء -->
-                <div class="app-card web-card">
-                    <div class="app-icon">
-                        <i class="fas fa-handshake"></i>
-                    </div>
-                    <h3>مساحة الشركاء</h3>
-                    <p>لشركائنا التجاريين - اقترح عروض جديدة، أدير مقترحاتك وتابع حالتها في الوقت الفعلي.</p>
-                    <div class="download-buttons">
-                        <a href="https://partner.avantagea.com" class="download-btn web-btn" target="_blank">
-                            <i class="fas fa-external-link-alt"></i>
-                            <span>الدخول إلى partner.avantagea.com</span>
-                        </a>
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h4>نشر</h4>
+                        <p>تنفيذ سريع وتدريب فرقك</p>
                     </div>
                 </div>
-
-
-
+            </div>
+            <div class="process-cta">
+                <a href="contact-ar.html" class="btn btn-primary">
+                    <i class="fas fa-calendar-check"></i>
+                    <span>جدولة عرض توضيحي</span>
+                </a>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <div class="logo">
-                        <img src="assets/logo-avantagea.png" alt="أفانتاجيا" class="logo-img">
-                        <span>أفانتاجيا</span>
-                    </div>
-                    <p>حل مبتكر لدعم استقرار الشركات الصغيرة والمتوسطة وتعزيز ولاء الموظفين من خلال مزايا رقمية سهلة الاستخدام.</p>
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="logo">
+                    <img src="assets/logo-avantagea.png" alt="أفانتاجيا" class="logo-img">
+                    <span>أفانتاجيا</span>
                 </div>
-                <div class="footer-section">
-                    <h4>روابط سريعة</h4>
-                    <ul>
-                        <li><a href="#accueil">الرئيسية</a></li>
-                        <li><a href="#solution">الحلول</a></li>
-                        <li><a href="#applications">التطبيقات</a></li>
-                        <li><a href="contact-ar.html">اتصل بنا</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>تواصل معنا</h4>
-                    <ul>
-                        <li><i class="fas fa-envelope"></i> contact@avantagea.com</li>
-                        <li><i class="fas fa-phone"></i> 0555-68-92-81</li>
-                        <li><i class="fas fa-map-marker-alt"></i> الجزائر العاصمة ، الجزائر</li>
-                    </ul>
+                <p>منصة مزايا الموظفين الجيل الجديد. احتفظ بمواهبك، عزز علامة صاحب العمل، وقدم الرفاهية التي تستحقها فرقك.</p>
+                <div class="footer-cta">
+                    <a href="contact-ar.html" class="btn btn-small">
+                        <i class="fas fa-phone-alt"></i>
+                        <span>الحصول على عرض سعر</span>
+                    </a>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>© 2025 أفانتاجيا. جميع الحقوق محفوظة.</p>
+            <div class="footer-section">
+                <h4>روابط سريعة</h4>
+                <ul>
+                    <li><a href="#accueil">الرئيسية</a></li>
+                    <li><a href="#solution">حلنا</a></li>
+                    <li><a href="#offres">عروضنا</a></li>
+                    <li><a href="#avantages">المزايا</a></li>
+                    <li><a href="#applications">التطبيقات</a></li>
+                    <li><a href="contact-ar.html">اتصل بنا</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>اتصال</h4>
+                <ul>
+                    <li><i class="fas fa-envelope"></i> contact@avantagea.com</li>
+                    <li><i class="fas fa-phone"></i> 00213-555-68-92-81</li>
+                    <li><i class="fas fa-map-marker-alt"></i> الجزائر العاصمة، الجزائر</li>
+                    <li><i class="fas fa-globe"></i> avantagea.com</li>
+                </ul>
+                <div class="footer-note">
+                    <p><strong>السؤال ليس "لماذا أفانتاجيا؟"</strong></p>
+                    <p>بل "إلى متى يمكنك تحمل خسارة أفضل مواهبك؟"</p>
+                </div>
             </div>
         </div>
-    </footer>
+        <div class="footer-bottom">
+            <p>&copy; 2025 أفانتاجيا. جميع الحقوق محفوظة.  <a href="privacy.html" style="color: #2563eb; text-decoration: none;">سياسة الخصوصية</a></p>
+        </div>
+    </div>
+</footer>
 
-    <script src="script.js"></script>
+<script src="script.js"></script>
+<script>
+    // سكريبت التحويل بين اللغات
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+        btn.addEventListener('click', function() {
+            const lang = this.getAttribute('data-lang');
+            if (lang === 'fr') {
+                window.location.href = 'index.html';
+            } else if (lang === 'ar') {
+                window.location.href = 'index-ar.html';
+            }
+        });
+    });
+</script>
 </body>
 </html>
