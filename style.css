@@ -1275,6 +1275,7 @@ body {
 .process-section .process-steps {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 40px;
     margin: 40px 0;
     flex-wrap: wrap;
@@ -1283,7 +1284,7 @@ body {
 .process-section .process-step {
     flex: 1;
     min-width: 200px;
-    max-width: 300px;
+    max-width: 250px; /* ← Ajustez cette valeur */
     text-align: center;
     display: flex;
     flex-direction: column;
